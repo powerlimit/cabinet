@@ -1,0 +1,70 @@
+// COLORS
+
+$accent: #fb8340;
+$danger: #d0021b;
+$secondary: #6aa3aa;
+$success: #09BE1B;
+$gray-200: #f2f2f2;
+$gray-600: #C2C8CC;
+$primary: #00A3FF;
+$soft-red: #ff204f;
+$warning: #fdc826;
+$body-color: #435057;
+
+// HEADINGS
+$headings-color: #2F363A;
+$headings-font-weight: 700;
+$headings-margin-bottom: 0;
+
+$paragraph-margin-bottom: 0;
+$badge-font-weight: 500;
+
+// SPACERS
+$spacer: 10px;
+$spacers: ();
+$spacers: map-merge((
+  0: 0,
+  1: $spacer,
+  2: ($spacer * 2),
+  3: ($spacer * 3),
+  4: ($spacer * 4),
+  5: ($spacer * 5),
+  6: ($spacer * 6),
+), $spacers);
+
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1540px
+);
+
+
+// FORMS
+
+$btn-padding-y: 20px;
+$btn-padding-x: 40px;
+$btn-font-size: 14px;
+$btn-line-height: 1;
+$btn-border-width: 0;
+$btn-border-radius: 10px;
+
+$label-margin-bottom: 16px;
+$input-padding-y: 1.4375rem;
+$input-padding-x: 1.25rem;
+$input-bg: #ECF0F3;
+$input-color: $body-color;
+$input-border-width: 0;
+$input-border-radius: 10px;
+$input-box-shadow: none;

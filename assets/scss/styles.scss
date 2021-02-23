@@ -1,0 +1,200 @@
+@import "../../static/font/formular/stylesheet.css";
+@import "bootstrap_functions";
+@import "bootstrap";
+@import "spacers";
+@import "transitions";
+
+* {
+  outline: none !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Formular, sans-serif;
+}
+
+.flex {
+  flex: 1;
+  &-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.light-link {
+  color: $gray-600;
+  text-decoration: underline;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  &:hover {
+    color: lighten($primary, 10%);
+    text-decoration: none;
+  }
+}
+
+.clean {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.progress {
+  position: fixed;
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 2;
+  .indeterminate {
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: $primary;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $primary;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -webkit-animation-delay: 1.15s;
+      animation-delay: 1.15s;
+    }
+  }
+}
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left:-35%;
+    right:100%
+  }
+  60% {
+    left:100%;
+    right:-90%
+  }
+  100% {
+    left:100%;
+    right:-90%
+  }
+}
+@keyframes indeterminate {
+  0% {
+    left:-35%;
+    right:100%
+  }
+  60% {
+    left:100%;
+    right:-90%
+  }
+  100% {
+    left:100%;
+    right:-90%
+  }
+}
+
+.was-validated .form-control:valid, .form-control.is-valid {
+  background-image: url(../../static/images/valid.svg);
+}
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  background-image: url(../../static/images/error.svg);
+}
+
+.vti__input {
+  box-shadow: none !important
+}
+.vue-tel-input {
+  border: none !important;
+  background: #ECF0F3 !important;
+  border-radius: $input-border-radius !important;
+}
+
+.buttons-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.toasted-container .toasted .action {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.mx-datepicker {
+  width: 100% !important;
+}
+
+.multiselect__tags {
+  height: 70px;
+  background-color: transparent !important;
+  border: none !important;
+  padding-top: 0 !important;
+  display: flex !important;
+  align-items: center;
+}
+.multiselect__input {
+  background-color: transparent !important;
+  margin-bottom: 0;
+  height: 100%;
+}
+.multiselect__select {
+  top: 16px !important;
+}
+
+.multiselect__single {
+  margin-bottom: 0 !important;
+  background-color: transparent !important;
+}
+
+.multiselect {
+  background-color: #ECF0F3 !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px !important;
+  &.is-invalid {
+    border-color: #d0021b;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23d0021b' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23d0021b' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.71875rem) center;
+    background-size: calc(0.75em + 1.4375rem) calc(0.75em + 1.4375rem);
+  }
+}
+
+.ps {
+  height: 100%;
+}
+
+.link-icon {
+  display: inline-block;
+  padding: 7px 0 7px 45px;
+  background: url(../../static/images/link.svg) no-repeat left center;
+}

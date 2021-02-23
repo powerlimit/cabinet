@@ -1,0 +1,41 @@
+{
+  "name": "cabinet",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/sentry": "^5.0.1",
+    "@nuxtjs/toast": "^3.3.1",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "country-list-js": "^3.1.7",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "js-cookie": "^2.2.1",
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.14.6",
+    "nuxt-client-init-module": "^0.2.0",
+    "nuxt-i18n": "^6.20.1",
+    "sass-loader": "10.1.1",
+    "vue-credit-card-validation": "^0.1.10",
+    "vue-currency-filter": "^5.2.0",
+    "vue-custom-scrollbar": "^1.4.0",
+    "vue-multiselect": "^2.1.6",
+    "vue-pdf": "^4.2.0",
+    "vue-tel-input": "^5.0.4",
+    "vue-the-mask": "^0.11.1",
+    "vue2-datepicker": "^3.9.0",
+    "vuelidate": "^0.7.6"
+  },
+  "devDependencies": {}
+}
